@@ -110,7 +110,7 @@ First go to your **Cloud9** Environment.
 
 1. We need to get the content of this workshop in this environment. In the Cloud9 terminal window, run the following command to clone this repository (bottom of the page):
 
-	`git clone https://github.com/aws-samples/aws-serverless-security-workshop.git`
+	`git clone https://github.com/nib-health-funds/aws-serverless-security-workshop.git`
 
 
 It's time to initiate your database. 

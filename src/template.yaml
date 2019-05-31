@@ -83,8 +83,9 @@ Resources:
       CodeUri: app/
       Handler: customizeUnicorn.lambda_handler
       Runtime: nodejs8.10
-      Policies:
-        - VPCAccessPolicy: {}
+      Role: !Sub 'arn:aws:iam::${AWS::AccountId}:role/UnicornFunctionRole'
+#      Policies:
+#        - VPCAccessPolicy: {}
 #        - Version: '2012-10-17'
 #          Statement:
 #            - Effect: Allow

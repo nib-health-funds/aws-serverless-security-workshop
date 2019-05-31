@@ -37,20 +37,21 @@ Resources:
       CodeUri: app/
       Handler: managePartners.lambda_handler
       Runtime: nodejs8.10
-      Policies:
-        - VPCAccessPolicy: {}
-        - Version: '2012-10-17'
-          Statement:
-            - Effect: Allow
-              Action:
-                - "cognito-idp:*"
-              Resource: "*"
-        - Version: '2012-10-17'
-          Statement:
-            - Effect: Allow
-              Action:
-                - "dynamodb:*"
-              Resource: "*"
+      Role: !Sub 'arn:aws:iam::${AWS::AccountId}:role/UnicornFunctionRole'
+      #      Policies:
+      #        - VPCAccessPolicy: {}
+      #        - Version: '2012-10-17'
+      #          Statement:
+      #            - Effect: Allow
+      #              Action:
+      #                - "cognito-idp:*"
+      #              Resource: "*"
+      #        - Version: '2012-10-17'
+      #          Statement:
+      #            - Effect: Allow
+      #              Action:
+      #                - "dynamodb:*"
+      #              Resource: "*"
 #        - Version: '2012-10-17'
 #          Statement:
 #            - Effect: Allow
@@ -134,8 +135,9 @@ Resources:
       CodeUri: app/
       Handler: unicornParts.lambda_handler
       Runtime: nodejs8.10
-      Policies:
-        - VPCAccessPolicy: {}
+      Role: !Sub 'arn:aws:iam::${AWS::AccountId}:role/UnicornFunctionRole'
+      #      Policies:
+      #        - VPCAccessPolicy: {}
 #        - Version: '2012-10-17'
 #          Statement:
 #            - Effect: Allow

@@ -183,10 +183,10 @@ We need to configure a [**Lambda authorizer**](https://docs.aws.amazon.com/apiga
 	#	          Action:
 	#	          - "dynamodb:*"
 	#	          Resource: "*"
-	      Environment:
-	        Variables:
-	          USER_POOL_ID: !Ref CognitoUserPool
-	          PARTNER_DDB_TABLE: !Ref PartnerDDBTable
+	    Environment:
+	      Variables:
+	        USER_POOL_ID: !Ref CognitoUserPool
+	        PARTNER_DDB_TABLE: !Ref PartnerDDBTable
 	```
 
 

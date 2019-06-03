@@ -255,7 +255,7 @@ We need to configure a [**Lambda authorizer**](https://docs.aws.amazon.com/apiga
 	              authorizerUri:
 	                Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${CustomAuthorizerFunction.Arn}/invocations
 	              authorizerCredentials:
-                  Fn::Sub: 'arn:aws:iam::${AWS::AccountId}:role/ApiGatewayAuthorizerRole'
+	                Fn::Sub: 'arn:aws:iam::${AWS::AccountId}:role/ApiGatewayAuthorizerRole'
 	              authorizerResultTtlInSeconds: 60
 
 	```

@@ -176,13 +176,13 @@ We need to configure a [**Lambda authorizer**](https://docs.aws.amazon.com/apiga
 	      Runtime: nodejs8.10
 	      Handler: index.handler
         Role: !Sub 'arn:aws:iam::${AWS::AccountId}:role/UnicornFunctionRole'
-#       Modified to use the predefined role because the environment we're running in doesn't allow us to create Roles or Policies
-#	      Policies:
-#	        Statement:
-#	          - Effect: Allow
-#	            Action:
-#	            - "dynamodb:*"
-#	            Resource: "*"
+  #     Modified to use the predefined role because the environment we're running in doesn't allow us to create Roles or Policies
+  #	    Policies:
+  #	      Statement:
+  #	        - Effect: Allow
+  #	          Action:
+  #	          - "dynamodb:*"
+  #	          Resource: "*"
 	      Environment:
 	        Variables:
 	          USER_POOL_ID: !Ref CognitoUserPool

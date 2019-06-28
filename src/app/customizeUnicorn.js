@@ -66,11 +66,6 @@ exports.lambda_handler = function (event, context, callback) {
         }
     } else if (event.httpMethod === "POST") {
         const request = JSON.parse(event["body"]);
-
-        if ("company" in request) {
-            company = request['company'];
-        }
-
         const name = request['name'];
 
 

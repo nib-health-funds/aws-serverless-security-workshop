@@ -21,9 +21,9 @@ The easiest way to find your logs is
 
 Assuming you have successfully completed all of Module 1 and had the API working from Postman it's likely your authentication token has simply hit the 1 hour timeout.
 
-Try getting a new auth token following the same instructions as in [01 add authentication module 1f](./blob/niblify/docs/01-add-authentication#module-1f-use-the-partner-company-client-credentials-to-customize-unicorns)
+Try getting a new auth token following the same instructions as in [01 add authentication module 1f](../01-add-authentication#module-1f-use-the-partner-company-client-credentials-to-customize-unicorns)
 
 
 ## Unable to read index
 
-This is typically if you haven't updated the dbUtils.js with the Aurora connection string, see [00 initial setup module 0d](./blob/niblify/docs/00-initial-setup#module-0d-run-your-serverless-application-locally-with-sam-local)
+This is typically if you haven't updated the dbUtils.js with the Aurora connection string, see [00 initial setup module 0d](../00-initial-setup#module-0d-run-your-serverless-application-locally-with-sam-local)
